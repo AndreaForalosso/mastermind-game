@@ -1,6 +1,8 @@
 
 # Mastermind Game
 
+# This is a game created by Andrea Foralosso
+
 MAX_NR_DIGITS = 5
 LIST_DIGITS = list(range(0,10))
 
