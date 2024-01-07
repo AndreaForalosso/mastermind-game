@@ -8,7 +8,6 @@ LIST_DIGITS = list(range(0,10))
 
 import random
 
-
 def get_combination_to_guess():
     while True:
         number_of_digits = input(f"How many digits should have the combination to guess (1-{MAX_NR_DIGITS})?")
