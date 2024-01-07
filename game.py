@@ -69,11 +69,7 @@ def main():
     while True:
         nr_tentative = nr_tentative + 1
         user_tentative = get_tentative_from_user_as_list(number_of_digits_to_respect)
-        user_tentative_to_print = ""
-        for i in range(1,len(user_tentative)):
-            user_tentative_to_print = user_tentative_to_print + user_tentative[i]
-            i + i +1
-        print(f"Your tentative has been: {user_tentative_to_print}")
+        print(f"Your tentative has been: {user_tentative}")
         a = check_input_user(user_tentative, combination_to_guess)
         if a == 1:
             break
