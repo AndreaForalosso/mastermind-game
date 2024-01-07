@@ -55,7 +55,7 @@ def check_input_user(user_tentative, combination_to_guess):
                     if user_tentative[i] == x:
                         nr_bonus = nr_bonus + 1
             i = i + 1
-        print("There are: " + str(nr_stars) + " stars and " + str(nr_stars) + " stars")
+        print("There are: " + str(nr_stars) + " stars and " + str(nr_bonus) + " bonus")
     return game_result
 
 
@@ -67,6 +67,10 @@ def main():
     while True:
         nr_tentative = nr_tentative + 1
         user_tentative = get_tentative_from_user_as_list(number_of_digits_to_respect)
+        user_tentative_to_print = ""
+        for x in user_tentative:
+            user_tentative_to_print = user_tentative_to_print + x
+        print(f"Your tentative has been {user_tentative}")
         a = check_input_user(user_tentative, combination_to_guess)
         if a == 1:
             break
